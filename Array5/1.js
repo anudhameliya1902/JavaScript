@@ -1,19 +1,15 @@
 
-let num =[2, 3, 4]
+function doubleAndAddIndex(arr){
 
+  let ans = arr.map((ele,ind)=>{
 
+      return ele*2+ind;
 
-function doubleAndAddIndex(arry){
+  })
 
-let ans =arry.map((el,ind)=>{
-  
-     return el*2+ind
-
-  })    
 
   return ans;
+
 }
 
-doubleAndAddIndex(num)
-
-console.log(doubleAndAddIndex(num));
+console.log(doubleAndAddIndex([2,3,4]))
