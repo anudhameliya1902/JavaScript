@@ -18,6 +18,8 @@ document.querySelector("#per").innerText = ""
 
 
 
+
+
 //Caught the Value Of Input Tag
 
     let username =  document.querySelector("#username").value
@@ -69,6 +71,11 @@ else if(password.length<8)
 if(formValid == true)
 {
 
+    document.getElementById("username").style.border = "2px solid white";
+    document.getElementById("email").style.border = "2px solid white";
+    document.getElementById("password").style.border = "2px solid white";
+
+
     let obj = {
         username : username,
         email : email,
@@ -78,6 +85,10 @@ if(formValid == true)
     arr.push(obj)
 
     console.log(arr);
+
+    document.querySelector("#username").value = " "
+    document.querySelector("#email").value = " "
+    document.querySelector("#password").value = " "
     
 
 }
